@@ -10,15 +10,17 @@ import './App.css';
 
 function App() {
   return (
-    <GlobalProvider>
-      <Header />
-      <div className="container">
-        <Balance />
-        <IncomeExpenses />
-        <TransactionList />
-        <AddTransaction />
-      </div>
-    </GlobalProvider>
+    <div id="global">
+      <GlobalProvider>
+        <Header />
+        <div className="container">
+          <Balance />
+          <IncomeExpenses />
+          <TransactionList />
+          <AddTransaction />
+        </div>
+      </GlobalProvider>
+    </div>
   );
 }
 
